@@ -4,7 +4,7 @@
  */
 
 // Stores the active TCP connection object.
-let conn;
+let connection;
 
 // const setupInput = function(conn) {
   
@@ -12,8 +12,8 @@ let conn;
 
 // setup interface to handle user input from stdin
 
-const setupInput = function () {
-  conn = conn;
+const setupInput = (conn) => {
+  connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
